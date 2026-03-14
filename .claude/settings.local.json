@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pg_ctl --version)",
+      "Bash(psql --version)",
+      "Bash(sc query:*)",
+      "Bash(net start:*)"
+    ]
+  }
+}
