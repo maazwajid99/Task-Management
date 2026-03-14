@@ -5,7 +5,8 @@
       "Bash(psql --version)",
       "Bash(sc query:*)",
       "Bash(net start:*)",
-      "Bash(npx tsc:*)"
+      "Bash(npx tsc:*)",
+      "Bash(ls d:/assessment/app/'\\(auth\\)')"
     ]
   }
 }
