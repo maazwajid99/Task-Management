@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/Button'
 import { Input } from '@/components/ui/Input'
 import { Textarea } from '@/components/ui/Textarea'
 import { Select } from '@/components/ui/Select'
-import { Task } from '@/types'
+import { Task, TaskStatus, Priority } from '@/types'
 
 interface TaskFormProps {
   projectId: string
@@ -73,13 +73,13 @@ export function TaskForm({ projectId, initialData, onSubmit, onCancel }: TaskFor
         <Select
           label="Status"
           value={form.status}
-          onChange={(e) => setForm({ ...form, status: e.target.value })}
+          onChange={(e) => setForm({ ...form, status: e.target.value as TaskStatus })}
           options={STATUS_OPTIONS}
         />
         <Select
           label="Priority"
           value={form.priority}
-          onChange={(e) => setForm({ ...form, priority: e.target.value })}
+          onChange={(e) => setForm({ ...form, priority: e.target.value as Priority })}
           options={PRIORITY_OPTIONS}
         />
       </div>
